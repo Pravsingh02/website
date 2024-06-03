@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>
+               Palantir Technologies - Software Engineer - Frontend Developer Productivity
+          </title>
+          <link href="design.css" rel="stylesheet">
+          <style>
+               .required::after{
+                    content: "*";
+                    color: red;
+               }
+               header{
+               position: sticky;
+               top: 0;
+               background-color: white;
+               z-index: 1000;
+               }
+          </style>
+     </head>
+     <body>
+          <header><img src="photo.png" alt="Palantir-Logo"></header>
+          <h1>Software Engineer - Frontend Developer<br>Productivity</h1>
+               <p>
+                    <p>Seattle,WA</p>
+                    <p>Dev / Full-Time / Hrbrid</p>
+
+               </p>
+               <div class="main-content"><br><br>
+                    <form method="post" action="/backend">
+                         <h4>Submit Your Application</h4>
+                         <label class="required" style="margin-left: 25%; color: #808080;">
+                              Resume/CV      
+                         </label>
+                         <button class="createbutton"><input type="file" id="resume" name="resume"><span>ATTACH RESUME/CV</span></button><br><br><br>
+                         
+                         
+                         <label for="name" class="required" style="margin-left: 25% ;margin-top: 30px; color: #808080;" >Full Name</label>
+                         <input type="text" name="Fullname" style="border-color:transparent;padding: 5px 8px;position: relative;left: 11%;top: 5px; width: 500px;">
+                         <br><br>
+                         <br>
+                         <div class="Pronoun-section" style="color: #808080;">
+    
+                              <label class="Pronoun-Outer" style="margin-left:25%;color: #808080; " >Pronouns</label>
+                                   <input type="checkbox" style="margin-left: 12%; letter-spacing: 1px;">
+                                   <label> He/him</label>
+                                   <input type="checkbox" style="margin-left: 6%; letter-spacing: 1px;">
+                                   <label> She/her</label>
+                                   <input type="checkbox" style="margin-left: 6%; letter-spacing: 1px;">
+                                   <label> They/them</label><br>
+                                   <br><br><br>
+                                   <div style="margin-left: 41.5%; ">
+                                        <input type="checkbox">
+                                        <label> Xe/xem</label>
+                                        <input type="checkbox" style="margin-left: 10.5%; letter-spacing: 1px;">
+                                        <label> Ze/hir</label>
+                                        <input type="checkbox" style="margin-left: 12%; letter-spacing: 1px;">
+                                        <label> Ey/em</label><br>
+                                   </div>
+                                   <br><br><br>
+                                   <div style="margin-left: 41.5%; ">
+                                        <input type="checkbox">
+                                        <label> Hir/hir</label>
+                                        <input type="checkbox" style="margin-left: 10.5%; letter-spacing: 1px;">
+                                        <label> Fae/faer</label>
+                                        <input type="checkbox" style="margin-left: 12%; letter-spacing: 1px;">
+                                        <label> Hu/hu</label><br>
+
+                                   </div>
+                                   <br>
+                                   <hr style="width: 35%; margin-left: 600px; margin-right: 1200px;">
+                                   <br>
+                                   <input type="checkbox" style="margin-left: 41.5%;">
+                                   <label> Use name only</label><br>
+                                   <br>
+                                   <hr style="width: 35%; margin-left: 600px; margin-right: 1200px;"><br>
+                                   <input type="checkbox" style="margin-left: 41.5%;">
+                                   <label>Custom</label><br>
+                                   <br>
+                                   <div class="question">
+                                        <p class="question" id="q">How would you like us to refer to you? Let us know what pronouns</p><p class="question" id="q">you use.</p>
+                                   </div>
+                                   <div class="information">
+                                        <label id="i1" class="required">Email</label>
+                                        <input type="email" style="border-color:transparent;padding: 5px 8px;position: relative;left: 11%;top: 5px; width: 500px;"><br><br>
+                                        <br><br><label id="i1">Phone</label>
+                                        <input type="number" style="border-color:transparent;padding: 5px 8px;position: relative;left: 11%;top: 5px; width: 500px;"><br><br>
+                                        <br><br><label id="i1" class="required">Current Location</label>
+                                        <input type="text" style="border-color:transparent;padding: 5px 8px;position: relative;left: 5.6%;top: 5px; width: 500px;"><br><br>
+                                        <br><br><label id="i1">Current Company</label>
+                                        <input type="text" style="border-color:transparent;padding:  5px 8px;position: relative;left: 5.6%;top: 5px; width: 500px;"><br><br>
+                                   </div>
+                                   <h4>Links</h4>
+                                   <br><br><br>
+                                   <div class="links">
+                                        <label id="link">LinkedIn URL</label>
+                                        <input type="email" style="border-color:transparent;padding: 5px 8px;position: relative;left: 10%;top: 5px; width: 500px;"><br><br>
+                                        <br><br><label id="link">Github URL</label>
+                                        <input type="email" style="border-color:transparent;padding: 5px 8px;position: relative;left: 11%;top: 5px; width: 500px;"><br><br>
+                                        <br><br><label id="link">Portfolio URL</label>
+                                        <input type="email" style="border-color:transparent;padding: 5px 8px;position: relative;left: 10%;top: 5px; width: 500px;"><br><br>
+                                        <br><br>
+                                   </div>
+                                   <h4>SUPPLEMENTARY QUESTIONS</h4><br><br>
+                                   <div class="language" >
+                                        <label for="languageSpecify" class="required" style="margin-left: 25%; color: #515357;">Language Skill(s) (Check all that apply)</label>
+                                        <br><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">English (ENG)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Spanish (SPA)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">French (FRA)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">German (DEU)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Japanese (JPN)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Cantonese (CANT)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Mandarin (MAN)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Dutch (NLD)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Hindi (HIN)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Arabic (ARA)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Danish (DAN)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Turkish (TUR)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Portuguese (POR)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Hebrew (HEB)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Swedish (SWE)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Norwegian (NOR)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Italian (ITA)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Vietnamese (VIE)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Tagalog (TGL)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Khmer (KHM)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Hmong (HMN)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Telugu (TEL)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Bengali (BNE)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Marathi (MAR)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Urdu (URD)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Gujarati (GUJ)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Lithuanian (LIT)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">American Sign Language (ASL)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">British Sign Language (BSL)</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Choose not to disclose</label><br>
+                                        <input type="checkbox" name="language" id="languagelist">
+                                        <label for="name">Other</label><br>
+                                   </div><br><br>
+                                   <label for="" style="margin-left: 25%; color: #515357;">Preferred Name | What would you like us to call you?</label><br><br>
+                                   <input type="text" placeholder="Type your response" style="border-color:transparent;padding: 5px 8px;position: relative;left: 25%;top: 5px; width: 700px; height: 40px;"><br><br>>
+                                   <br><br><label for="" style="margin-left: 25%; color: #515357;">Name Pronunciation | How do you pronounce your name?</label><br><br>
+                                   <input type="text" placeholder="Type your response" style="border-color:transparent;padding: 5px 8px;position: relative;left: 25%;top: 5px; width: 700px; height: 40px;"><br><br><br><br><br><br>
+                                   <h4>WORK AUTHORIZATION</h4>
+                                   <br><br>
+                                   <div class="q1">
+                                        <label class="required" style="margin-left: 25%; color: #515357;">Are you legally authorized to work in the country for which you are applying?</label><br><br>
+                                        <input type="radio" name="selectyesorno" style="margin-left: 27%; color: #808080;"><span>Yes</span><br><br>
+                                        <input type="radio" name="selectyesorno" style="margin-left: 27%; color: #808080;"><span>No</span>
+                                   </div>
+                                   <br><br>
+                                   <div class="q2">
+                                        <label class="required" style="margin-left: 25%; color: #515357;">Will you now or in the future require sponsorship for employment visa status (e.g., H-1B, etc.)?</label><br><br>
+                                        <input type="radio" name="selectyesorno" style="margin-left: 27%; color: #808080;"><span>Yes</span><br><br>
+                                        <input type="radio" name="selectyesorno" style="margin-left: 27%; color: #808080;"><span>No</span>
+                                   </div>
+                                   <br><br><br>
+                                   <h4>UNIVERSITY</h4><br><br>
+                                        <label for="university" style="margin-left: 25%; color: #515357;">Which university are you currently attending or did you last attend? Please select "Other (School Not Listed)"<br>
+                                        <label for="university" class="required" style="margin-left: 25%; color: #515357;">if your school is not listed. </label><br><br>
+                                        <select id="university" name="university" style="width: 48%; margin-left: 28%; height: 40px; background-color:lightgray; border: transparent;">
+                                             <option value="">Select...</option>
+                                             <option value="aalborg">Aalborg University</option>
+                                             <option value="aalto">Aalto University</option>
+                                             <option value="aarhus">Aarhus University</option>
+                                             <option value="abdullah_gul">Abdullah Gul University</option>
+                                             <option value="abertay">Abertay University</option>
+                                             <option value="aberystwyth">Aberystwyth University</option>
+                                             <option value="abilene_christian">Abilene Christian University</option>
+                                             <option value="abo_akademi">Abo Akademi University</option>
+                                             <option value="abubakar_tafawa">Abubakar Tafawa Balewa University</option>
+                                             <option value="academy_art">Academy of Art University</option>
+                                             <option value="academy_economic">Academy of Economic Studies of Moldova</option>
+                                             <option value="academy_fine_arts">Academy of Fine Arts in Warsaw</option>
+                                             <option value="academy_information_technology">Academy of Information Technology</option>
+                                             <option value="academy_technology">Academy of Technology - AOT</option>
+                                             <option value="acharya_nagarjuna">Acharya Nagarjuna University</option>
+                                             <option value="adam_mickiewicz">Adam Mickiewicz University in Poznan</option>
+                                             <option value="adams_state">Adams State College</option>
+                                             <option value="adana_science">Adana Science and Technology University</option>
+                                             <option value="addis_ababa">Addis Ababa Institute of Technology</option>
+                                             <option value="other">Other (School Not Listed)
+                                        </option></select></label>
+                                        <br><br><br><br>
+                                   <h4>HOW DID YOU HEAR ABOUT THIS OPPORTUNITY?</h4><br><br>
+                                        <label for="about" class="required" style="margin-left: 25%; color: #515357;">Please tell us how you heard about this opportunity. </label><br><br>
+                                        <select id="source" name="source" style="width: 48%; margin-left: 28%; height: 40px; background-color:lightgray; border: transparent;">
+                                             <option value="">Select...</option>
+                                             <option value="agency_recruiter">Agency or Non-Palantir Recruiter</option>
+                                             <option value="job_exchange">America's Job Exchange</option>
+                                             <option value="campus_ambassador">Campus Ambassador</option>
+                                             <option value="friend_family">Friend or Family</option>
+                                             <option value="glassdoor">Glassdoor</option>
+                                             <option value="hallo">Hallo</option>
+                                             <option value="handshake">Handshake</option>
+                                             <option value="job_board">Job Board (Indeed, Monster, etc.)</option>
+                                             <option value="linkedin">LinkedIn</option>
+                                             <option value="palantir_event">Palantir Event</option>
+                                             <option value="palantir_blog">Palantir Medium Blog</option>
+                                             <option value="palantir_recruiter">Palantir Recruiter</option>
+                                             <option value="palantir_website">Palantir Website</option>
+                                             <option value="rewriting_code">Rewriting the Code</option>
+                                             <option value="tapia">Tapia</option>
+                                             <option value="university_job_board">University Job Board</option>
+                                             <option value="university_organization">University or University Organization</option>
+                                             <option value="other">Other</option>
+                                         </select>
+                                        <br><br><br>
+                                   <h4>SOFTWARE ENGINEER - FRONTEND DEVELOPER PRODUCTIVITY CUSTOM QUESTION</h4><br><br><br>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">Describe your experience with frontend build tooling, and/or a way you improved the developer productivity </label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">in your most recent role. </label><br><br>
+                                   <textarea rows="9" cols="100" style="margin-left: 27%;"></textarea><br><br>
+                                   <h4>RELEVANT EXPERIENCE</h4><br><br>
+                                        <label for="about" class="required" style="margin-left: 25%; color: #515357;">How many years of relevant, post college work experience do you have?</label><br><br>
+                                        <br>
+                                        <select id="source" name="source" style="width: 48%; margin-left: 28%; height: 40px; background-color:lightgray; border: transparent;">
+                                             <option value="">0</option>
+                                             <option value="agency_recruiter">1</option>
+                                             <option value="job_exchange">2</option>
+                                             <option value="campus_ambassador">3</option>
+                                             <option value="friend_family">4</option>
+                                             <option value="glassdoor">5</option>
+                                             <option value="hallo">6</option>
+                                             <option value="handshake">7</option>
+                                             <option value="job_board">8</option>
+                                             <option value="linkedin">9</option>
+                                             <option value="palantir_event">10+</option>
+                                        </select><br><br><br>
+                                        <h4>ADDITIONAL QUESTION</h4><br><br>
+                                        <label for="about" style="margin-left: 25%; color: #515357;">What has been your favorite project or proudest accomplishment? Why?</label><br><br>
+                                        <textarea rows="9" cols="100" style="margin-left: 27%;"></textarea><br><br><br>
+                                        <label for="about" style="margin-left: 25%; color: #515357;">Why do you want to work at Palantir?</label><br><br>
+                                        <textarea rows="9" cols="100" style="margin-left: 27%;"></textarea><br><br><br>
+                                   <h4>PALANTIR IS COMMITTED TO MAKING THE JOB APPLICATION PROCESS ACCESSIBLE TO<br> EVERYONE. IF YOU ARE LIVING WITH A DISABILITY (VISIBLE OR NOT VISIBLE) AND NEED<br> TO REQUEST A REASONABLE ACCOMMODATION FOR ANY PART OF THE APPLICATION OR <br>HIRING PROCESS, PLEASE REACH OUT TO ACCOMMODATIONS@PALANTIR.COM AND LET <br>US KNOW HOW WE CAN HELP.</h4>
+                                   <br><br><br><br>
+                                   <h4>ADDITIONAL INFORMATION</h4><br><br>
+                                   <textarea rows="9" cols="100" style="margin-left: 27%;"></textarea><br><br><br>
+                              </div>
+                              <br><br>
+                              <hr style="width: 50%; margin-left: 400px; margin-right: 1100px;"><br><br><br><br>
+                              <div class="container">
+                                   <div class="header">
+                                   </div>
+                                   <h4>U.S. Equal Employment Opportunity Information</h4>
+                                   <p class="important-note">(Completion is voluntary and will not subject you to adverse treatment)</p>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">Palantir provides equal employment and affirmative action opportunities to applicants and employees</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, protected</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">veteran status, or disability.</label><br>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">Palantir is a federal contractor or subcontractor subject to certain governmental recordkeeping and reporting</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">requirements for the administration of civil right laws and regulations. Employment decisions are made on</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">the basis of job-related criteria without regard to race, ethnicity, color, religion, sex, sexual orientation,</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">gender identity, marital status, age, genetic information, national origin, disability, military, or veteran status,</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">or any other classification protected by applicable law.</label><br>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">We invite all applicants to voluntarily self-identify their race, ethnicity, and gender. Submission of the</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">information on this form is strictly voluntary and refusal to provide it will not subject you to any adverse</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">treatment. Information obtained will be retained in a confidential file and separate from personnel records.</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">This information may only be used in accordance with the provision of applicable federal laws, executive</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">orders, and regulations. If you want more information about any of the sections, please check with a</label>
+                                   <label for="about" style="margin-left: 25%; color: #515357;">company representative.</label>
+                                   <br><br>
+                                   <br><br>
+                              </div>
+                              <button type="submit" value="Submit Application" style="margin-left: 45%; font-family: 'Lato',sans-serif; height: 45px; width: 190px; background-color: black; color: white;" >SUBMIT APPLICATION</button><br><br><br><br>
+                         </div>
+                         
+                         
+                    </form>
+                    
+               </div>
+               <br><br>
+          </div>
+          <footer>
+               <p><a href="https://www.palantir.com/" style="color: skyblue; margin-left: 21%;">Palantir Technologies Home Page</a></p>
+               <br><br><br>
+               <p style="margin-left: 45%;">Jobs powered by <b>Lever</b> </a></p><br><br><br><br>
+          </footer>
+     </body>
+</html>
